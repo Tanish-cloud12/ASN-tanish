@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanish Choudhary | Portfolio</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+
+<style>
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+header {
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.logo span {
+  color: #0078ff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.nav-links a:hover {
+  color: #0078ff;
+}
+
+
+.hero {
+  background: linear-gradient(to right, #0078ff, #00bfff);
+  color: #fff;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.hero h2 span {
+  color: #fff;
+  font-weight: 700;
+}
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+.btn {
+  text-decoration: none;
+  background: #fff;
+  color: #0078ff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #0078ff;
+  color: #fff;
+}
+
+
+section h2 {
+  text-align: center;
+  margin: 2.5rem 0 1rem;
+  color: #0078ff;
+}
+
+
+.about {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+
+.skills {
+  background: #fff;
+  padding: 2rem 0;
+}
+.skill-container {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.skill {
+  background: #0078ff;
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  border-radius: 25px;
+  font-weight: 500;
+}
+
+
+.projects {
+  padding: 2rem 0;
+}
+.project-container {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+.project-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+.project-card h3 {
+  color: #0078ff;
+  margin-bottom: 0.5rem;
+}
+
+
+.contact {
+  background: #f1f8ff;
+  padding: 2rem;
+  text-align: center;
+}
+.contact a {
+  color: #0078ff;
+  text-decoration: none;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #0078ff;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  .hero {
+    padding: 3rem 1rem;
+  }
+}
+
+</style>
+  <header>
+    <nav>
+      <h1 class="logo">Tanish Choudhary<span>.</span></h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Hi, I'm <span>Tanish Choudhary</span></h2>
+      <p>A passionate Web Developer exploring <strong>Web3</strong>, <strong>AI/ML</strong>, and <strong>Finance</strong>.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+ 
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I am currently pursuing B.Tech in Electronics and Communication Engineering (specialization in AI/ML) at NSUT. I'm a fresher web developer who loves creating clean, modern, and responsive websites.
+      I’m also interested in emerging technologies like Web3 and AI/ML, and I enjoy learning
+      how technology and finance can work together to create smarter digital systems.
+    </p>
+  </section>
+
+ 
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skill-container">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      
+      <div class="skill">Responsive Design</div>
+      
+    </div>
+  </section>
+
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-container">
+      <div class="project-card">
+        <h3>Expense Tracker</h3>
+        <p>A simple web app to track daily expenses using HTML, CSS, and Basic JS.</p>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>This website — built from scratch using only HTML & CSS.</p>
+      </div>
+      <div class="project-card">
+        <h3>Tech Fest Website</h3>
+        <p>Displays all event details and dates built using HTML CSS only.</p>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Let's connect and build something amazing!</p>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:tanisheng12@gmail.com">tanish@example.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/tanish-choudhary-network/">linkedin.com/in/tanishchoudhary</a></p>
+      <p>GitHub: <a href="https://github.com/Tanish-cloud12">github.com/tanishchoudhary</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Tanish Choudhary. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
